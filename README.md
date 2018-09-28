@@ -24,6 +24,7 @@ I am REST web service on top of HTTP, hence I can be easily used via any HTTP cl
 
 ```bash
 $ curl -i localhost:8080
+
 HTTP/1.1 200
 Content-Type: text/plain;charset=UTF-8
 Content-Length: 102
@@ -37,6 +38,7 @@ $
 
 ```
 $ curl -i localhost:8080/persons
+
 HTTP/1.1 404
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
@@ -98,8 +100,21 @@ HTTP/1.1 200
 Content-Type: application/json;charset=UTF-8
 Transfer-Encoding: chunked
 Date: Fri, 28 Sep 2018 19:17:51 GMT
+```
 
-[{"id":1,"firstName":"Paul","lastName":"McCartney","email":"paul@heyjude.com"},{"id":2,"firstName":"John","lastName":"Lennon","email":"john@cometogether.org"},{"id":3,"firstName":"Ringo","lastName":"Starr","email":"ringo@abby.road"}]
+```json
+[{"id":1,
+  "firstName":"Paul",
+  "lastName":"McCartney",
+  "email":"paul@heyjude.com"},
+ {"id":2,
+  "firstName":"John",
+  "lastName":"Lennon",
+  "email":"john@cometogether.org"},
+ {"id":3,
+  "firstName":"Ringo",
+  "lastName":"Starr",
+  "email":"ringo@abby.road"}]
 ```
 
 ### update personal records
